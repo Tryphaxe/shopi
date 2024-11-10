@@ -1,0 +1,27 @@
+/* Styles de la barre de défilement */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-track {
+    background: #ffe5cc;
+    /* Couleur de fond du track (piste) */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff9900;
+    /* Couleur de la barre de défilement */
+    border-radius: 6px;
+    /* Arrondir les coins */
+    border: 2px solid #ffe5cc;
+    /* Espace entre le thumb et le track */
+}
+
+/* Pour les navigateurs comme Firefox */
+.scrollbar-orange {
+    scrollbar-color: #ff9900 #ffe5cc;
+    /* Couleur de la barre de défilement et du track */
+    scrollbar-width: thin;
+    /* Réduit la largeur de la barre */
+}

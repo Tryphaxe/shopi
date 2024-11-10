@@ -1,0 +1,4 @@
+input[type="checkbox"]:checked+label {
+    background:  #c94e28;
+    color: white;
+}

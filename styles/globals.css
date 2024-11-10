@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'flowbite';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@font-face {
+  font-family: 'Afacad';
+  src: url('/Fonts/static/Afacad-regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  /* color: var(--foreground);
+  background: var(--background); */
+  font-family: Afacad, sans-serif;
+}
