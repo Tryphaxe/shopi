@@ -2,7 +2,11 @@ import React from 'react'
 
 const Case = () => {
     return (
+<<<<<<< HEAD
         <div className="w-5/6 rounded-lg overflow-hidden mx-auto my-3 shadow-lg bg-[url('/img/background.jpg')] bg-cover bg-center h-full">
+=======
+        <div className="my-3 shadow-lg bg-[url('https://afriquemagazine.com/sites/default/files/2021-12/image-AM-423-424-page-72-73.jpg')] bg-cover bg-center h-full w-full">
+>>>>>>> c48826c (Version 10)
             <div className="container py-10 px-32  mx-auto bg-black bg-opacity-50">
                 <h1 className="text-4xl font-bold mb-2 text-white">Commencez maintenant</h1>
                 <h1 className="text-3xl text-orange-400  font-semibold mb-8">Faites le Show dans tout Babi...</h1>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Link from 'next/link'
 import React from 'react'
 
@@ -187,6 +188,14 @@ function page() {
                 </Link>
             </div>
         </div>
+=======
+import React from 'react'
+
+const page = () => {
+  return (
+    <div>
+      
+>>>>>>> c48826c (Version 10)
     </div>
   )
 }

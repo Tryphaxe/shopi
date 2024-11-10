@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "baseUrl": ".",
     "paths": {
       "@/*": ["./app/*"],         // Alias pour le répertoire "app"
@@ -13,3 +14,10 @@
     }
   }
 }
+=======
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
+}
+>>>>>>> c48826c (Version 10)

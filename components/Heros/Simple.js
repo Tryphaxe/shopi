@@ -2,11 +2,19 @@ import React from 'react'
 
 const Simple = () => {
     return (
+<<<<<<< HEAD
         <div className="w-5/6 mx-auto py-5">
             <div className="max-w-7xl mx-auto py-5">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
                     <div className="wow fadeIn" data-wow-delay="0.1s" style={{visibility: "visible", animationDelay: "0.1s", animationName: "fadeIn"}}>
                         <img src="/img/freepik.jpeg" className='h-[100%]' />
+=======
+        <div className="w-full py-5 bg-gray-100">
+            <div className="max-w-7xl mx-auto py-5">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
+                    <div className="wow fadeIn" data-wow-delay="0.1s" style={{visibility: "visible", animationDelay: "0.1s", animationName: "fadeIn"}}>
+                        
+>>>>>>> c48826c (Version 10)
                     </div>
                     <div className="wow fadeIn" data-wow-delay="0.3s" style={{visibility: "visible", animationDelay: "0.3s", animationName: "fadeIn"}}>
                         <h4 className="text-primary mb-4 border-b-4 border-primary inline-block px-2 py-1 rounded">Qui sommes-nous</h4>

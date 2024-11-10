@@ -11,6 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^2.1.10",
     "@heroicons/react": "^2.1.5",
+<<<<<<< HEAD
     "@nextui-org/tabs": "^2.0.37",
     "@react-google-maps/api": "^2.20.3",
     "flowbite-react": "^0.10.2",
@@ -111,4 +112,18 @@
   },
   "author": "Axel Dibi",
   "license": "ISC"
+=======
+    "@react-google-maps/api": "^2.20.3",
+    "flowbite-react": "^0.10.2",
+    "next": "15.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typed.js": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "15.0.0",
+    "tailwindcss": "^3.4.1"
+  }
+>>>>>>> c48826c (Version 10)
 }
