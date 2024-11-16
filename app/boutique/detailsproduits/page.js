@@ -53,20 +53,21 @@ function page() {
                                 </p>
                                 <ul className="grid gap-y-2 mb-4">
                                     <li className="flex items-center gap-3">
-                                        <i className="fa-solid fa-circle-check" style={{ color: "#128114;" }}></i>
+                                        <i className="fa-solid fa-circle-check" style={{ color: "#128114" }}></i>
                                         <span className="font-normal text-base text-gray-900 ">Branded shirt</span>
                                     </li>
                                     <li className="flex items-center gap-3">
-                                        <i className="fa-solid fa-circle-check" style={{ color: "#128114;" }}></i>
+                                        <i className="fa-solid fa-circle-check" style={{ color: "#128114" }}></i>
                                         <span className="font-normal text-base text-gray-900 ">3 color shirt</span>
                                     </li>
                                     <li className="flex items-center gap-3">
-                                        <i className="fa-solid fa-circle-check" style={{ color: "#128114;" }}></i>
+                                        <i className="fa-solid fa-circle-check" style={{ color: "#128114" }}></i>
                                         <span className="font-normal text-base text-gray-900 ">Pure Cotton Shirt with 60% as
-                                            40%</span>
+                                            40%
+                                        </span>
                                     </li>
                                     <li className="flex items-center gap-3">
-                                        <i className="fa-solid fa-circle-check" style={{ color: "#128114;" }}></i>
+                                        <i className="fa-solid fa-circle-check" style={{ color: "#128114" }}></i>
                                         <span className="font-normal text-base text-gray-900 ">all size is available</span>
                                     </li>
                                 </ul>

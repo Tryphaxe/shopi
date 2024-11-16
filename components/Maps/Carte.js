@@ -5,11 +5,7 @@ import { GoogleMap, LoadScript, Marker, TrafficLayer } from '@react-google-maps/
 
 const containerStyle = {
   width: '100%',
-<<<<<<< HEAD
   height: '100%',
-=======
-  height: '1fr',
->>>>>>> c48826c (Version 10)
 };
 
 function Carte() {
@@ -86,11 +82,7 @@ function Carte() {
   return (
     <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
       {location ? (
-<<<<<<< HEAD
         <div className="h-full w-full">
-=======
-        <div className="">
->>>>>>> c48826c (Version 10)
           {/* Boutons de contrôle de zoom personnalisés */}
           <div className="absolute bottom-4 right-4 z-10 flex flex-col space-y-2">
             <button

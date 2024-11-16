@@ -8,7 +8,7 @@ function page() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-manrope font-bold text-4xl text-black mb-8">New Arrivals</h2>
           <div className="grid grid-cols-4 sm:grid-cols-4 xl:grid-cols-4 gap-8">
-            <Link href="/boutique/detailsproduit" className="relative bg-cover group rounded-3xl bg-center overflow-hidden mx-auto sm:mr-0 xl:mx-auto cursor-pointer">
+            <Link href="/boutique/detailsproduits" className="relative bg-cover group rounded-3xl bg-center overflow-hidden mx-auto sm:mr-0 xl:mx-auto cursor-pointer">
               <img className="rounded-2xl object-cover" src="https://lequotidien.sn/wp-content/uploads/2019/02/produits-alimentaire.jpg" alt="Jacket image" />
               <div
                 className="absolute z-10 bottom-3 left-0 mx-3 p-3 bg-white w-[calc(100%-24px)] rounded-xl shadow-sm shadow-transparent transition-all duration-500 group-hover:shadow-orange-200 group-hover:bg-orange-50">
@@ -19,7 +19,7 @@ function page() {
                 <p className="text-xs leading-5 text-gray-500">Women's Winter Wear</p>
               </div>
             </Link>
-            <Link href="/boutique/detailsproduit"
+            <Link href="/boutique/detailsproduits"
               className="relative bg-cover group rounded-3xl bg-center overflow-hidden mx-auto sm:ml-0 xl:mx-auto cursor-pointer">
               <img className="rounded-2xl object-cover" src="https://lequotidien.sn/wp-content/uploads/2019/02/produits-alimentaire.jpg" alt="Blazer image" />
               <div
@@ -31,7 +31,7 @@ function page() {
                 <p className="text-xs leading-5 text-gray-500">Men’s Suits</p>
               </div>
             </Link>
-            <Link href="/boutique/detailsproduit"
+            <Link href="/boutique/detailsproduits"
               className="relative bg-cover group rounded-3xl bg-center overflow-hidden mx-auto sm:mr-0 xl:mx-auto cursor-pointer">
               <img className="rounded-2xl object-cover" src="https://lequotidien.sn/wp-content/uploads/2019/02/produits-alimentaire.jpg" alt="printed top image" />
               <div
@@ -44,7 +44,7 @@ function page() {
               </div>
             </Link>
 
-            <Link href="/boutique/detailsproduit"
+            <Link href="/boutique/detailsproduits"
               className="relative bg-cover group rounded-3xl bg-center overflow-hidden mx-auto sm:ml-0 xl:mx-auto cursor-pointer">
               <img className="rounded-2xl object-cover" src="https://lequotidien.sn/wp-content/uploads/2019/02/produits-alimentaire.jpg" alt="Denim jacket image" />
               <div
@@ -63,7 +63,7 @@ function page() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-manrope font-bold text-4xl text-black mb-8">New Arrivals</h2>
           <div className="grid grid-cols-4 sm:grid-cols-4 xl:grid-cols-4 gap-8">
-            <Link href="/boutique/detailsproduit" className="relative bg-cover group rounded-3xl bg-center overflow-hidden mx-auto sm:mr-0 xl:mx-auto cursor-pointer">
+            <Link href="/boutique/detailsproduits" className="relative bg-cover group rounded-3xl bg-center overflow-hidden mx-auto sm:mr-0 xl:mx-auto cursor-pointer">
               <img className="rounded-2xl object-cover" src="https://lequotidien.sn/wp-content/uploads/2019/02/produits-alimentaire.jpg" alt="Jacket image" />
               <div
                 className="absolute z-10 bottom-3 left-0 mx-3 p-3 bg-white w-[calc(100%-24px)] rounded-xl shadow-sm shadow-transparent transition-all duration-500 group-hover:shadow-orange-200 group-hover:bg-orange-50">
@@ -74,7 +74,7 @@ function page() {
                 <p className="text-xs leading-5 text-gray-500">Women's Winter Wear</p>
               </div>
             </Link>
-            <Link href="/boutique/detailsproduit"
+            <Link href="/boutique/detailsproduits"
               className="relative bg-cover group rounded-3xl bg-center overflow-hidden mx-auto sm:ml-0 xl:mx-auto cursor-pointer">
               <img className="rounded-2xl object-cover" src="https://lequotidien.sn/wp-content/uploads/2019/02/produits-alimentaire.jpg" alt="Blazer image" />
               <div
@@ -86,7 +86,7 @@ function page() {
                 <p className="text-xs leading-5 text-gray-500">Men’s Suits</p>
               </div>
             </Link>
-            <Link href="/boutique/detailsproduit"
+            <Link href="/boutique/detailsproduits"
               className="relative bg-cover group rounded-3xl bg-center overflow-hidden mx-auto sm:mr-0 xl:mx-auto cursor-pointer">
               <img className="rounded-2xl object-cover" src="https://lequotidien.sn/wp-content/uploads/2019/02/produits-alimentaire.jpg" alt="printed top image" />
               <div
@@ -99,7 +99,7 @@ function page() {
               </div>
             </Link>
 
-            <Link href="/boutique/detailsproduit"
+            <Link href="/boutique/detailsproduits"
               className="relative bg-cover group rounded-3xl bg-center overflow-hidden mx-auto sm:ml-0 xl:mx-auto cursor-pointer">
               <img className="rounded-2xl object-cover" src="https://lequotidien.sn/wp-content/uploads/2019/02/produits-alimentaire.jpg" alt="Denim jacket image" />
               <div
@@ -117,7 +117,7 @@ function page() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="font-manrope font-bold text-3xl min-[400px]:text-4xl text-black mb-8 max-lg:text-center">Available Products</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <Link href="/boutique/detailsproduit" className="max-w-[384px] mx-auto">
+          <Link href="/boutique/detailsproduits" className="max-w-[384px] mx-auto">
             <div className="w-full max-w-sm aspect-square">
               <img src="https://lequotidien.sn/wp-content/uploads/2019/02/produits-alimentaire.jpg" alt="cream image" className="w-full h-full rounded-xl object-cover" />
             </div>
@@ -139,7 +139,7 @@ function page() {
             </div>
           </Link>
 
-          <Link href="/boutique/detailsproduit" className="max-w-[384px] mx-auto">
+          <Link href="/boutique/detailsproduits" className="max-w-[384px] mx-auto">
             <div className="w-full max-w-sm aspect-square">
               <img src="https://lequotidien.sn/wp-content/uploads/2019/02/produits-alimentaire.jpg" alt="cream image" className="w-full h-full rounded-xl object-cover" />
             </div>
@@ -161,7 +161,7 @@ function page() {
             </div>
           </Link>
 
-          <Link href="/boutique/detailsproduit" className="max-w-[384px] mx-auto">
+          <Link href="/boutique/detailsproduits" className="max-w-[384px] mx-auto">
             <div className="w-full max-w-sm aspect-square relative">
               <img src="https://lequotidien.sn/wp-content/uploads/2019/02/produits-alimentaire.jpg" alt="serum bottle image" className="w-full h-full rounded-xl object-cover" />
               <span

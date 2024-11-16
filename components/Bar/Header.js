@@ -17,11 +17,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
   return (
-<<<<<<< HEAD
     <header className="sticky h-[13vh] top-0 w-full bg-white shadow-md z-50">
-=======
-    <header className="sticky top-0 w-full bg-white shadow-md z-50">
->>>>>>> c48826c (Version 10)
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -57,52 +53,30 @@ export default function Example() {
             Explorez
           </Link>
           <Link
-<<<<<<< HEAD
             href="/boutique"
             className={`text-md font-semibold leading-6 hover:text-orange-400 transition-all ${ pathname === '/boutique' ? 'text-orange-400 font-bold' : 'text-black' }`}
-=======
-            href="#"
-            className="text-md font-semibold leading-6 text-black hover:text-orange-400 transition-all"
->>>>>>> c48826c (Version 10)
           >
             Boutique
           </Link>
           <Link
-<<<<<<< HEAD
             href="/abonnements"
             className={`text-md font-semibold leading-6 hover:text-orange-400 transition-all ${ pathname === '/abonnements' ? 'text-orange-400 font-bold' : 'text-black' }`}
-=======
-            href="#"
-            className="text-md font-semibold leading-6 text-black hover:text-orange-400 transition-all"
->>>>>>> c48826c (Version 10)
           >
             Abonnements
           </Link>
           <Link
-<<<<<<< HEAD
             href="/apropos"
             className={`text-md font-semibold leading-6 hover:text-orange-400 transition-all ${ pathname === '/apropos' ? 'text-orange-400 font-bold' : 'text-black' }`}
-=======
-            href="#"
-            className="text-md font-semibold leading-6 text-black hover:text-orange-400 transition-all"
->>>>>>> c48826c (Version 10)
           >
             A propos
           </Link>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
-<<<<<<< HEAD
             href="/login"
             className="text-md font-semibold leading-6 text-black hover:text-orange-400 transition-all"
           >
             Connectez-vous <span aria-hidden="true">&rarr;</span>
-=======
-            href="#"
-            className="text-md font-semibold leading-6 text-black hover:text-orange-400 transition-all"
-          >
-            Log in <span aria-hidden="true">&rarr;</span>
->>>>>>> c48826c (Version 10)
           </Link>
         </div>
       </nav>
