@@ -1,4 +1,3 @@
-import Search from "@/components/Bar/Search";
 import Bottom from "@/components/Buttons/Bottom";
 import Cardsimple from "@/components/Card/Cardsimple";
 import Cardville from "@/components/Card/Cardville";
@@ -6,6 +5,9 @@ import Carouselflow from "@/components/Carousel/Carouselflow";
 import Case from "@/components/Heros/Case";
 import Simple from "@/components/Heros/Simple";
 import Texted from "@/components/Typed/Texted";
+import Research from "@/components/Bar/Research"
+import HeroSection from "@/components/Heros/HeroSection";
+import SlideEven from "@/components/Slider/SlideEven";
 
 export default function Home() {
   return (
@@ -20,7 +22,8 @@ export default function Home() {
                 Trouvez quelques-uns des meilleurs conseils de nos partenaires
                 <br /> et amis dans toute la ville.
               </p>
-              <Search />
+              {/* <Search /> */}
+              <Research />
             </div>
           </div>
           <Bottom />
@@ -28,15 +31,13 @@ export default function Home() {
       </div>
 
       {/* EVENEMENT CONTAINER */}
-      <div className="my-12 border-b-2 border-orange-300 pb-5">
+      <div className="my-12 border-b-2 border-orange-300 pb-5 relative">
         <div className="m-auto flex flex-col items-center my-5">
           <span className="text-4xl text-orange-600 mb-3 bg-orange-100 py-2 px-5 rounded-full">- Les dernières annonces -</span>
           <span className="text-xl text-gray-600">Vibrez sur les évènements du moments</span>
         </div>
-        <div className="px-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <Cardsimple />
-          <Cardsimple />
-          <Cardsimple />
+        <div className="w-full mb-4">
+          <SlideEven />
         </div>
         {/* BOUTON VOIR PLUS */}
         <div className="flex items-center justify-center">
@@ -66,6 +67,9 @@ export default function Home() {
           <a href="#" className="bg-orange-800 text-white transition-colors cursor-pointer hover:bg-orange-700 text-md flex items-center justify-center px-4 py-2 rounded-full mx-auto mt-3 gap-2"><i className="fa-solid fa-plus"></i>Voir toutes les villes</a>
         </div>
       </div>
+
+      {/* SECTION HERO */}
+      <HeroSection />
 
       {/* SECTION CAROUSEL FLOW */}
       <Carouselflow />

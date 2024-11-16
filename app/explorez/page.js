@@ -11,10 +11,13 @@ const page = () => {
     <div className="grid grid-rows-[auto,1fr]">
       <Tri />
 
-      <div className="grid grid-cols-2 h-[78vh]">
+      <div className="grid grid-cols-2 max-h-[80vh] ">
         {/* BLOC  */}
-        <div className='overflow-hidden overflow-y-scroll bg-white shadow-sm'>
-          <div className='w-full grid grid-cols-2 px-3 gap-3 scrollbar-orange'>
+        <div className='px-5 py-2 overflow-hidden overflow-y-scroll bg-white shadow-sm'>
+          <div className='mb-3'>
+            <span className='text-sm text-black'>223 établissements</span>
+          </div>
+          <div className='mb-3 w-full grid grid-cols-3 gap-1 scrollbar-orange'>
             <Carddetails />
             <Carddetails />
             <Carddetails />
