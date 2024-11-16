@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".", // Définit le répertoire racine pour les chemins relatifs
+      "paths": {
+        "@/*": ["./"],
+        // "@components/*": ["components/*"],
+        // "@styles/*": ["styles/*"]
+      }
+    },
+    "include": ["./**/*"], // Inclut tous les fichiers et sous-dossiers
+    "exclude": ["node_modules", "dist"] // Exclut ces dossiers
+  }
+  
