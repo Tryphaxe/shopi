@@ -1,7 +1,15 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./app/*"],         // Alias pour le répertoire "app"
+      "@/components/*": ["./components/*"],
+      "@/styles/*": ["./styles/*"],
+      "@/shared/*": ["./shared/*"],
+      "@/data/*": ["./data/*"],
+      "@/hooks/*": ["./hooks/*"],
+      "@/images/*": ["./images/*"],
+      "@/utils/*": ["./utils/*"],
     }
   }
 }

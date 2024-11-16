@@ -4,7 +4,7 @@ import { Carousel } from "flowbite-react";
 
 const Carouselflow = () => {
   return (
-    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 mx-10">
+    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 mx-auto w-5/6">
       <Carousel slideInterval={10000}>
         {/* <img src="/img/slide1.jpg" alt="Slide 1" className="w-full h-auto" />
         <img src="/img/slide2.webp" alt="Slide 2" className="w-full h-auto" />
