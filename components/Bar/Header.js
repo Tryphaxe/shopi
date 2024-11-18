@@ -17,13 +17,13 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
   return (
-    <header className="sticky h-[13vh] top-0 w-full bg-white shadow-md z-50">
+    <header className={`sticky h-[13vh] top-0 w-full bg-white shadow-md z-50 ${ pathname === '/' ? 'hidden' : 'block'}`}>
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <Link href="#" className="-m-1.5 p-1.5 flex items-center gap-3">
+          <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
             <span className="sr-only">Shopping@babi</span>
             <i className="fa-solid fa-gem fa-2xl" style={{ color: "green" }}></i>
             <span className="text-orange-600 text-lg">Shopping@babi</span>
@@ -41,8 +41,8 @@ export default function Example() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Link
-            href="/"
-            className={`text-md font-semibold leading-6 hover:text-orange-400 transition-all ${ pathname === '/' ? 'text-orange-400 font-bold' : 'text-black' }`}
+            href="/home"
+            className={`text-md font-semibold leading-6 hover:text-orange-400 transition-all ${ pathname === '/home' ? 'text-orange-400 font-bold' : 'text-black' }`}
           >
             Acceuil
           </Link>

@@ -7,11 +7,11 @@ import Link from 'next/link';
 const Footer = () => {
     const pathname = usePathname();
     return (
-        <footer className={`bg-gray-100 dark:bg-gray-900 ${pathname === '/explorez' ? 'hidden' : 'block'}`}>
+        <footer className={`bg-gray-100 ${["/", "/explorez"].includes(pathname) ? "hidden" : "block"}`}>
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        <a href="https://flowbite.com/" className="flex items-center">
+                        <a href="/home" className="flex items-center">
                             <i className="fa-solid fa-gem fa-2xl" style={{ color: "green" }}></i>
                             <span className="self-center ml-2 text-2xl font-semibold whitespace-nowrap dark:text-white">Shopping@babi</span>
                         </a>
@@ -21,7 +21,7 @@ const Footer = () => {
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <Link href="/" className="hover:underline">Acceuil</Link>
+                                    <Link href="/home" className="hover:underline">Acceuil</Link>
                                 </li>
                                 <li className="mb-4">
                                     <Link href="/explorez" className="hover:underline">Explorez</Link>

@@ -10,4 +10,9 @@ SIGNUP
 ---
 TOUS LES DASHBOARD
 
+CODE POUR AFFICHER UN SUSPENSE
+<Header />
+    <Suspense fallback={<Loading />}>{children}</Suspense>
+<Footer />
+
 */ 
