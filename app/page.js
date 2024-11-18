@@ -1,6 +1,5 @@
 "use client";
 
-import { Spinner } from 'flowbite-react';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 
@@ -10,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       router.push('/home');
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [router]);

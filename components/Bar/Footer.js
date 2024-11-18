@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Footer = () => {
     const pathname = usePathname();
     return (
-        <footer className={`bg-gray-100 ${["/", "/explorez"].includes(pathname) ? "hidden" : "block"}`}>
+        <footer className={`bg-gray-100 ${["/", "/explorez", "/auth/login", "/auth/signup"].includes(pathname) ? "hidden" : "block"}`}>
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">

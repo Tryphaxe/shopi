@@ -49,16 +49,16 @@ const Search = () => {
             </label>
           </div>
         </div>
-        <div className="search border-gray-200 border rounded-lg">
-          <div className="bg-white px-3 py-1 rounded-lg gap-2 flex items-center">
-            <i className="fa-solid fa-location-dot" style={{color: "gray"}}></i>
-            <input type="text" className="outline-none border-none w-100" placeholder="Position:  Exemple (Abidjan)" />
-          </div>
+        <div className="relative  text-gray-500 focus-within:text-gray-900 ">
+        <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none ">
+          <i class="fa-solid fa-location-dot text-orange-500"></i>
         </div>
-        <a href="#" className="bg-red-200 flex items-center gap-3 px-3 py-2 rounded-lg transition-all hover:bg-red-100">
-          <i className="fa-solid fa-search"></i>
-          Rechercher
-        </a>
+        <input type="text" id="default-search" className="block w-full max-w-xs pr-4 pl-12 py-2 text-sm font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-none leading-relaxed" placeholder="Position" />
+      </div>
+      <a href="#" className="bg-green-900 text-white flex items-center gap-3 px-3 py-2 rounded-lg transition-all hover:bg-red-100">
+        <i className="fa-solid fa-search text-orange-400"></i>
+        Rechercher
+      </a>
       </form>
   );
 };

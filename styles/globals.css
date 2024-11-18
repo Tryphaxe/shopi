@@ -4,11 +4,6 @@
 
 @import 'flowbite';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @font-face {
   font-family: 'Afacad';
   src: url('/Fonts/static/Afacad-regular.ttf') format('ttf');
@@ -32,4 +27,10 @@ body {
 .fond{
   background: rgb(27,92,22);
 background: linear-gradient(132deg, rgba(27,92,22,1) 0%, rgba(49,121,9,1) 35%, rgba(255,165,17,1) 100%);
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }

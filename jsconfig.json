@@ -2,7 +2,7 @@
     "compilerOptions": {
       "baseUrl": ".", // Définit le répertoire racine pour les chemins relatifs
       "paths": {
-        "@/*": ["./"],
+        "@/*": ["./*"],
         "@/components/*": ["components/*"],
         "@/styles/*": ["styles/*"]
       }

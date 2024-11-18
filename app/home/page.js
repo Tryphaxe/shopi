@@ -60,8 +60,7 @@ export default function Home() {
         </div>
         {/* BOUTON VOIR PLUS */}
         <div className="flex items-center justify-center">
-          <a href="#" className="bg-green-800 text-white transition-colors cursor-pointer hover:bg-green-700 text-md flex items-center justify-center px-4 py-2 rounded-full mx-auto mt-3 gap-2">
-            <i className="fa-solid fa-plus"></i>
+          <a href="#" className="bg-green-800 text-white transition-colors cursor-pointer hover:bg-green-700 text-md flex items-center justify-center px-4 py-2 rounded-full mx-auto mt-3">
             Voir toutes les annonces
           </a>
         </div>

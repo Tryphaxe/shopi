@@ -1,65 +1,30 @@
+"use client"
+
 import React from "react";
 import "@/styles/checkbox.css";
+import { Datepicker } from "flowbite-react";
 
 const SearchCar = () => {
   return (
-      <form action="" method="GET" className="flex gap-5 mt-3 items-center bg-white p-2 rounded-lg">
-        <div className=" border-gray-200 border rounded-lg">
-          <div className="flex gap-3">
-            <input type="checkbox" className="hidden" name="" id="option1" />
-            <label
-              htmlFor="option1"
-              className="flex justify-center items-center cursor-pointer
-              bg-white border-solid border-white rounded-lg p-3 transition-all gap-1"
-            >
-              <i className="fa-solid fa-person-swimming fa-xl" style={{color: "orange"}}></i>
-              Piscine
-            </label>
-            <input type="checkbox" className="hidden" name="" id="option2" />
-            <label
-              htmlFor="option2"
-              className="flex gap-1 justify-center items-center cursor-pointer  bg-white border-solid border-white rounded-lg p-3 transition-all"
-            >
-              <i className="fa-solid fa-house-signal fa-xl" style={{color: "orange"}}></i>
-              Wifi
-            </label>
-            <input type="checkbox" className="hidden" name="" id="option3" />
-            <label
-              htmlFor="option3"
-              className="flex gap-1 justify-center items-center cursor-pointer  bg-white border-solid border-white rounded-lg p-3 transition-all"
-            >
-              <i className="fa-solid fa-wind fa-xl" style={{color: "orange"}}></i>
-              Clim
-            </label>
-            <input type="checkbox" className="hidden" name="" id="option4" />
-            <label
-              htmlFor="option4"
-              className="flex gap-1 justify-center items-center cursor-pointer  bg-white border-solid border-white rounded-lg p-3 transition-all"
-            >
-              <i className="fa-solid fa-utensils fa-xl" style={{color: "orange"}}></i>
-              Restau
-            </label>
-            <input type="checkbox" className="hidden" name="" id="option5" />
-            <label
-              htmlFor="option5"
-              className="flex gap-1 justify-center items-center cursor-pointer  bg-white border-solid border-white rounded-lg p-3 transition-all"
-            >
-              <i className="fa-solid fa-cookie-bite fa-xl" style={{color: "orange"}}></i>
-              Ptit dej
-            </label>
-          </div>
+    <form action="" method="GET" className="flex gap-5 mt-3 items-center bg-white p-2 rounded-lg">
+      <div className="relative  text-gray-500 focus-within:text-gray-900 ">
+        <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none ">
+          <i class="fa-solid fa-bowl-rice text-orange-500"></i>
         </div>
-        <div className="search border-gray-200 border rounded-lg">
-          <div className="bg-white px-3 py-1 rounded-lg gap-2 flex items-center">
-            <i className="fa-solid fa-location-dot" style={{color: "gray"}}></i>
-            <input type="text" className="outline-none border-none w-100" placeholder="Position:  Exemple (Abidjan)" />
-          </div>
+        <input type="text" id="default-search" className="block w-full max-w-xs pr-4 pl-12 py-2 text-sm font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-none leading-relaxed" placeholder="Restaurant" />
+      </div>
+      <Datepicker />
+      <div className="relative  text-gray-500 focus-within:text-gray-900 ">
+        <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none ">
+          <i class="fa-solid fa-user-group text-orange-500"></i>
         </div>
-        <a href="#" className="bg-red-200 flex items-center gap-3 px-3 py-2 rounded-lg transition-all hover:bg-red-100">
-          <i className="fa-solid fa-search"></i>
-          Rechercher
-        </a>
-      </form>
+        <input type="text" id="default-search" className="block w-full max-w-xs pr-4 pl-12 py-2 text-sm font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-none leading-relaxed" placeholder="Personne(s)" />
+      </div>
+      <a href="#" className="bg-green-900 text-white flex items-center gap-3 px-3 py-2 rounded-lg transition-all hover:bg-red-100">
+        <i className="fa-solid fa-search text-orange-400"></i>
+        Rechercher
+      </a>
+    </form>
   );
 };
 

@@ -17,7 +17,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
   return (
-    <header className={`sticky h-[13vh] top-0 w-full bg-white shadow-md z-50 ${ pathname === '/' ? 'hidden' : 'block'}`}>
+    <header className={`sticky h-[13vh] top-0 w-full bg-white shadow-md z-50 ${ ["/", "/auth/login", "/auth/signup"].includes(pathname) ? 'hidden' : 'block'}`}>
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -73,7 +73,7 @@ export default function Example() {
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
-            href="/login"
+            href="/auth/login"
             className="text-md font-semibold leading-6 text-black hover:text-orange-400 transition-all"
           >
             Connectez-vous <span aria-hidden="true">&rarr;</span>
