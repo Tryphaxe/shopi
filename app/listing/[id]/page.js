@@ -5,7 +5,7 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import Search from "@/components/Bar/Search";
-import Cardchambre from "@/components/Cardchambre";
+import Cardbath from "@/components/Card/Cardbath";
 
 function page() {
 
@@ -135,24 +135,24 @@ function page() {
                     {/* RECHERCHES POUR HOTELS */}
                     <TabPanel>
                         <div className="grid grid-cols-3 gap-3">
-                            <Cardchambre />
-                            <Cardchambre />
-                            <Cardchambre />
+                            <Cardbath />
+                            <Cardbath />
+                            <Cardbath />
                         </div>
                     </TabPanel>
 
                     {/* RECHERCHE VOITURE */}
                     <TabPanel>
                         <div className="grid grid-cols-3 gap-3">
-                            <Cardchambre />
+                            <Cardbath />
                         </div>
                     </TabPanel>
 
                     {/* RECHERCHE ACTIVITY */}
                     <TabPanel>
                         <div className="grid grid-cols-3 gap-3">
-                            <Cardchambre />
-                            <Cardchambre />
+                            <Cardbath />
+                            <Cardbath />
                         </div>
                     </TabPanel>
                 </TabPanels>
