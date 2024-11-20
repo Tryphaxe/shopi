@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Cardville = () => {
@@ -7,9 +8,9 @@ const Cardville = () => {
             <span className="flex items-center gap-1 text-lg font-medium px-2 p-1 bg-white text-gray-700 absolute left-0">
                 Abidjan
             </span>
-            <a href="#">
+            <Link href="/listing/181124">
                 <img className="rounded-t-lg w-full h-60" src="/img/hot2.jpg" alt="evenement picture" />
-            </a>
+            </Link>
         </div>
     </div>
   )

@@ -40,7 +40,7 @@ export default function Home() {
           Les membres obtiennent toujours nos meilleurs prix une fois connectés
           </p>
         </div>
-        <Link href="#" className="flex items-center gap-2 bg-white rounded-full shadow-sm text-lg text-[#1b5c16] font-semibold py-4 px-8 transition-all duration-500">
+        <Link href="/auth/login" className="flex items-center gap-2 bg-white rounded-full shadow-sm text-lg text-[#1b5c16] font-semibold py-4 px-8 transition-all duration-500">
           Se connecter
           <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.75 7L16.4167 7M11.8333 12.5L16.6852 7.64818C16.9907 7.34263 17.1435 7.18985 17.1435 7C17.1435 6.81015 16.9907 6.65737 16.6852 6.35182L11.8333 1.5" stroke="#1b5c16" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">

@@ -11,22 +11,46 @@
   font-style: normal;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-} */
+}
 
 body {
-  /* color: var(--foreground);
-  background: var(--background); */
+  color: var(--foreground);
+  background: var(--background);
   font-family: Afacad, sans-serif;
 }
 
 .fond{
   background: rgb(27,92,22);
 background: linear-gradient(132deg, rgba(27,92,22,1) 0%, rgba(49,121,9,1) 35%, rgba(255,165,17,1) 100%);
+}
+
+.carousel {
+  .slick-prev,
+  .slick-next {
+      padding: 10px;
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      cursor: pointer;
+      background: rgb(182, 163, 129);
+  }
+  .slick-prev {
+      left: -8px;
+  }
+  .slick-next {
+      right: 12px;
+  }
+}
+
+.image-gallery-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 @layer base {
