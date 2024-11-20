@@ -5,7 +5,7 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import Search from "@/components/Bar/Search";
-import Cardchambre from "@/components/Card/cardchambre";
+import Cardchambre from "@/components/Cardchambre";
 
 function page() {
 
@@ -126,9 +126,9 @@ function page() {
             <hr />
             <TabGroup className="bg-white px-3 py-4 rounded-lg">
                 <TabList className="mb-3 transition-all duration-300">
-                    <Tab className="text-xl data-[selected]:border-b-orange-500 data-[selected]:border-b data-[selected]:text-black outline-none mr-5 transition-all duration-300">Toutes les chambres</Tab>
-                    <Tab className="text-xl data-[selected]:border-b-orange-500 data-[selected]:border-b data-[selected]:text-black outline-none mr-5 transition-all duration-300">1 Lit</Tab>
-                    <Tab className="text-xl data-[selected]:border-b-orange-500 data-[selected]:border-b data-[selected]:text-black outline-none mr-5 transition-all duration-300">2 Lits</Tab>
+                    <Tab className="text-xl data-[selected]:border-b-green-800 data-[selected]:border-b data-[selected]:text-black outline-none mr-5 transition-all duration-300">Toutes les chambres</Tab>
+                    <Tab className="text-xl data-[selected]:border-b-green-800 data-[selected]:border-b data-[selected]:text-black outline-none mr-5 transition-all duration-300">1 Lit</Tab>
+                    <Tab className="text-xl data-[selected]:border-b-green-800 data-[selected]:border-b data-[selected]:text-black outline-none mr-5 transition-all duration-300">2 Lits</Tab>
                 </TabList>
                 <TabPanels>
 
