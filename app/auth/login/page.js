@@ -7,7 +7,7 @@ function page() {
             <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
                 <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0">
                     <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-                        <Link href="#" className="flex items-center mb-6 text-xl text-gray-900 dark:text-white">
+                        <Link href="/" className="flex items-center mb-6 text-xl text-gray-900 dark:text-white">
                             <i className="fa-solid fa-gem fa-lg mr-2" style={{ color: "green" }}></i>
                             Shopping@babi
                         </Link>

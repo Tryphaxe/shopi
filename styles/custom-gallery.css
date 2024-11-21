@@ -1,0 +1,9 @@
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  width: 5px; /* Réduire la largeur */
+  height: 5px; /* Réduire la hauteur */
+}
+
+.image-gallery-icon {
+  font-size: 5px; /* Réduire la taille de l'icône */
+}

@@ -17,7 +17,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
   return (
-    <header className={`sticky h-[13vh] top-0 w-full bg-white shadow-md z-50 ${ ["/", "/auth/login", "/auth/signup"].includes(pathname) ? 'hidden' : 'block'}`}>
+    <header className={`sticky h-[13vh] top-0 w-full bg-white shadow-md z-50 ${["/", "/auth/login", "/auth/signup"].includes(pathname) ? 'hidden' : 'block'}`}>
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -39,42 +39,49 @@ export default function Example() {
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+        <PopoverGroup className="hidden lg:flex lg:gap-x-10 lg:items-center">
           <Link
             href="/home"
-            className={`text-md font-semibold leading-6 hover:text-orange-400 transition-all ${ pathname === '/home' ? 'text-orange-400 font-bold' : 'text-black' }`}
+            className={`text-md font-semibold leading-6 hover:text-orange-500 transition-all ${pathname === '/home' ? 'text-orange-500 font-bold' : 'text-black'}`}
           >
             Acceuil
           </Link>
           <Link
             href="/explorez"
-            className={`text-md font-semibold leading-6 hover:text-orange-400 transition-all ${ pathname === '/explorez' ? 'text-orange-400 font-bold' : 'text-black' }`}
+            className={`text-md font-semibold leading-6 hover:text-orange-500 transition-all ${pathname === '/explorez' ? 'text-orange-500 font-bold' : 'text-black'}`}
           >
             Explorez
           </Link>
           <Link
             href="/boutique"
-            className={`text-md font-semibold leading-6 hover:text-orange-400 transition-all ${ pathname === '/boutique' ? 'text-orange-400 font-bold' : 'text-black' }`}
+            className={`text-md font-semibold leading-6 hover:text-orange-500 transition-all ${pathname === '/boutique' ? 'text-orange-500 font-bold' : 'text-black'}`}
           >
             Boutique
           </Link>
           <Link
             href="/abonnements"
-            className={`text-md font-semibold leading-6 hover:text-orange-400 transition-all ${ pathname === '/abonnements' ? 'text-orange-400 font-bold' : 'text-black' }`}
+            className={`text-md font-semibold leading-6 hover:text-orange-500 transition-all ${pathname === '/abonnements' ? 'text-orange-500 font-bold' : 'text-black'}`}
           >
             Abonnements
           </Link>
           <Link
             href="/apropos"
-            className={`text-md font-semibold leading-6 hover:text-orange-400 transition-all ${ pathname === '/apropos' ? 'text-orange-400 font-bold' : 'text-black' }`}
+            className={`text-md font-semibold leading-6 hover:text-orange-500 transition-all ${pathname === '/apropos' ? 'text-orange-500 font-bold' : 'text-black'}`}
           >
             A propos
+          </Link>
+          <Link
+            href="/shoppingcart"
+            className={`text-md border border-gray-400 rounded-full px-4 py-1 font-semibold leading-6 hover:text-orange-500 transition-all ${pathname === '/apropos' ? 'text-orange-500 font-bold' : 'text-black'}`}
+          >
+            <i className="fa-solid fa-cart-shopping mr-3 text-orange-500"></i>
+            Panier
           </Link>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="/auth/login"
-            className="text-md font-semibold leading-6 text-black hover:text-orange-400 transition-all"
+            className="text-md font-semibold leading-6 text-black hover:text-orange-500 transition-all"
           >
             Connectez-vous <span aria-hidden="true">&rarr;</span>
           </Link>
@@ -121,34 +128,40 @@ export default function Example() {
                   </DisclosurePanel>
                 </Disclosure> */}
                 <Link
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-700 hover:text-orange-400 transition-all"
+                  href="/home"
+                  className={`text-md font-semibold leading-6 hover:text-orange-500 transition-all ${pathname === '/home' ? 'text-orange-500 font-bold' : 'text-black'}`}
                 >
                   Acceuil
                 </Link>
                 <Link
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-700 hover:text-orange-400 transition-all"
+                  href="/explorez"
+                  className={`text-md font-semibold leading-6 hover:text-orange-500 transition-all ${pathname === '/explorez' ? 'text-orange-500 font-bold' : 'text-black'}`}
                 >
                   Explorez
                 </Link>
                 <Link
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-700 hover:text-orange-400 transition-all"
+                  href="/boutique"
+                  className={`text-md font-semibold leading-6 hover:text-orange-500 transition-all ${pathname === '/boutique' ? 'text-orange-500 font-bold' : 'text-black'}`}
                 >
                   Boutique
                 </Link>
                 <Link
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-700 hover:text-orange-400 transition-all"
+                  href="/abonnements"
+                  className={`text-md font-semibold leading-6 hover:text-orange-500 transition-all ${pathname === '/abonnements' ? 'text-orange-500 font-bold' : 'text-black'}`}
                 >
                   Abonnements
                 </Link>
                 <Link
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-700 hover:text-orange-400 transition-all"
+                  href="/apropos"
+                  className={`text-md font-semibold leading-6 hover:text-orange-500 transition-all ${pathname === '/apropos' ? 'text-orange-500 font-bold' : 'text-black'}`}
                 >
                   A propos
+                </Link>
+                <Link
+                  href="/shoppingcart"
+                  className={`text-md border border-black rounded-full px-3 py-1 font-semibold leading-6 hover:text-orange-500 transition-all ${pathname === '/apropos' ? 'text-orange-500 font-bold' : 'text-black'}`}
+                >
+                  Panier
                 </Link>
               </div>
               <div className="py-6">
