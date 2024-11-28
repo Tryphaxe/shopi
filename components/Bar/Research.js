@@ -5,7 +5,7 @@ import SearchAct from './SearchAct'
 
 export default function Research() {
   return (
-    <TabGroup className="bg-white px-3 py-4 rounded-lg h-32">
+    <TabGroup className="bg-white md:px-3 py-4 rounded-lg">
       <TabList className="mb-3 transition-all duration-300">
         <Tab className="data-[selected]:border-b-orange-500 data-[selected]:border-b-2 data-[selected]:text-black outline-none mr-5 transition-all duration-300">Hôtels</Tab>
         <Tab className="data-[selected]:border-b-orange-500 data-[selected]:border-b-2 data-[selected]:text-black outline-none mr-5 transition-all duration-300">Restaurants</Tab>

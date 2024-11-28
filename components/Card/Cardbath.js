@@ -5,7 +5,7 @@ function Cardbath() {
     return (
         <div className="max-w-80 min-w-64 h-min bg-white border border-gray-200 rounded-2xl shadow overflow-hidden relative">
             <Link href="/listing/12456">
-                <img className="z-10 rounded-t-lg w-full h-48 hover:scale-105 transition-all bg-center bg-contain" src="https://voogo.fr/wp-content/uploads/2021/11/251623919_425544605633703_4179423185897958966_n-1080x720.jpg" alt="evenement picture" />
+                <img className="z-10 rounded-t-lg w-full h-48 hover:scale-105 transition-all bg-center bg-contain" src="/img/vojtech.jpg" alt="evenement picture" />
             </Link>
 
             <form className="p-3">

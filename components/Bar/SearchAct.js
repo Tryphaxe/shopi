@@ -3,7 +3,7 @@ import "@/styles/checkbox.css";
 
 const SearchAct = () => {
   return (
-    <form action="" method="GET" className="flex gap-5 mt-3 items-center bg-white p-2 rounded-lg">
+    <form action="" method="GET" className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-3 items-center bg-white md:p-2 rounded-lg">
       <div className="relative  text-gray-500 focus-within:text-gray-900 ">
         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none ">
           <i className="fa-solid fa-bowl-rice text-orange-500"></i>

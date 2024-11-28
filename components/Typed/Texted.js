@@ -4,10 +4,10 @@ import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 
 const Texted = () => {
-    // Référence à l'élément qui sera animé
-  const typedElement = useRef(null); 
+  // Référence à l'élément qui sera animé
+  const typedElement = useRef(null);
   // Référence à l'instance de Typed
-  const typedInstance = useRef(null); 
+  const typedInstance = useRef(null);
 
   useEffect(() => {
     const options = {
@@ -25,8 +25,12 @@ const Texted = () => {
   }, []);
 
   return (
-    <div className='h-20'>
-      <span ref={typedElement} className="text-lg sm:text-lg md:text-4xl lg:text-6xl text-white" />
+    <div className='md:h-16 sm:h-12 lg:h-20 h-max mb-3'>
+      <span ref={typedElement} className="text-2xl sm:text-2xl md:text-4xl lg:text-6xl md:text-white text-gray-950" />
+      <p className="text-lg text-gray-700  md:text-orange-100 relative mb-5">
+        Trouvez quelques-uns des meilleurs conseils de nos partenaires
+      </p>
+      <hr className='my-3 border-2 border-gray-500'/>
     </div>
   );
 };
