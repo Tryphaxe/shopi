@@ -1,11 +1,11 @@
 "use client";
 
 import React from 'react'
-import Carddetails from '@/components/Card/Carddetails';
 import Carte from '@/components/Maps/Carte';
 import Tri from '@/components/Bar/Tri';
 import "@/styles/scroll.css"
 import Searchtwo from '@/components/Bar/Searchtwo';
+import Carddetail from '@/components/Card/Carddetail';
 
 const page = () => {
   return (
@@ -18,11 +18,11 @@ const page = () => {
           {/* BLOC  */}
           <div className='px-5 py-2 overflow-hidden md:overflow-y-scroll bg-white shadow-sm'>
             <div className='mb-3 w-full grid grid-cols-2 md:grid-cols-3 gap-2 md:scrollbar-orange'>
-              <Carddetails />
-              <Carddetails />
-              <Carddetails />
-              <Carddetails />
-              <Carddetails />
+              <Carddetail />
+              <Carddetail />
+              <Carddetail />
+              <Carddetail />
+              <Carddetail />
             </div>
           </div>
 

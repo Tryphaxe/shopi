@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Carddetails = () => {
+const Carddetail = () => {
     return (
         <div className="max-w-64 min-w-50 h-min bg-white border border-gray-200 rounded-2xl shadow overflow-hidden relative">
             <span className="bg-blue-100 text-blue-800 flex items-center gap-2 text-md font-medium me-2 px-3 py-1 rounded-full dark:bg-yellow-900 dark:text-yellow-300 absolute right-0 m-2"><i className='fa-solid fa-hotel text-yellow-300'></i>Hôtel</span>
@@ -31,4 +31,4 @@ const Carddetails = () => {
     )
 }
 
-export default Carddetails
+export default Carddetail
