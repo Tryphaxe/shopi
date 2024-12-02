@@ -15,9 +15,8 @@ export default function SlideEven() {
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: true,
-        speed: 1000,
+        speed: 500,
         cssEase: "linear",
-        centerMode: true,
         responsive: [
             {
               breakpoint: 1024, // Jusqu'à 1024px
@@ -26,6 +25,7 @@ export default function SlideEven() {
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true,
+                centerMode: false,
               },
             },
             {
@@ -33,6 +33,7 @@ export default function SlideEven() {
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                centerMode: false,
               },
             },
             {
@@ -40,6 +41,7 @@ export default function SlideEven() {
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                centerMode: true,
                 arrows: false, // Masquer les flèches de navigation
               },
             },

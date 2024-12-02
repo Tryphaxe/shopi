@@ -2,14 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'flowbite';
-
-@font-face {
-  font-family: 'Afacad';
-  src: url('/Fonts/static/Afacad-regular.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
+@import "flowbite";
 
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -18,21 +11,43 @@
   }
 } */
 
-body {
+/* body {
   /* color: var(--foreground);
-  background: var(--background); */
-  font-family: Afacad, sans-serif;
-}
+  background: var(--background); 
+} */
 
-.fond{
-  background: rgb(27,92,22);
-  background: linear-gradient(132deg, rgba(27,92,22,1) 0%, rgba(49,121,9,1) 35%, rgba(255,165,17,1) 100%);
+.fond {
+  background: rgb(27, 92, 22);
+  background: linear-gradient(
+    132deg,
+    rgba(27, 92, 22, 1) 0%,
+    rgba(49, 121, 9, 1) 35%,
+    rgba(255, 165, 17, 1) 100%
+  );
 }
 
 .carousel .slide img {
   width: 100%; /* Remplit le conteneur */
   height: 350px; /* Hauteur fixe (modifiable) */
   background: cover/center;
+}
+
+button.slick-next.slick-arrow::before,
+button.slick-prev.slick-arrow::before {
+  color: #b1b1b1;
+}
+button.slick-next,
+button.slick-prev {
+  z-index: 50;
+  background-color: rgb(255, 250, 242);
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  transition: all 0.3ms ease-in-out;
+}
+button.slick-next:hover,
+button.slick-prev:hover {
+  background-color: rgb(255, 237, 226);
 }
 
 @layer base {

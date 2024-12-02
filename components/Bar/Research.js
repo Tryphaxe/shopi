@@ -5,11 +5,11 @@ import SearchAct from './SearchAct'
 
 export default function Research() {
   return (
-    <TabGroup className="bg-white md:px-3 py-4 rounded-lg">
-      <TabList className="mb-3 transition-all duration-300">
-        <Tab className="data-[selected]:border-b-orange-500 data-[selected]:border-b-2 data-[selected]:text-black outline-none mr-5 transition-all duration-300">Hôtels</Tab>
-        <Tab className="data-[selected]:border-b-orange-500 data-[selected]:border-b-2 data-[selected]:text-black outline-none mr-5 transition-all duration-300">Restaurants</Tab>
-        <Tab className="data-[selected]:border-b-orange-500 data-[selected]:border-b-2 data-[selected]:text-black outline-none mr-5 transition-all duration-300">Activités</Tab>
+    <TabGroup className="bg-white border md:px-3 py-4 rounded-lg">
+      <TabList className="mb-3 transition-all duration-300 text-center border-b">
+        <Tab className="data-[selected]:border-b-orange-500 data-[selected]:border-b-2 data-[selected]:text-orange-500 text-md font-semibold outline-none mr-5">Hôtels</Tab>
+        <Tab className="data-[selected]:border-b-orange-500 data-[selected]:border-b-2 data-[selected]:text-orange-500 text-md font-semibold outline-none mr-5">Restaurants</Tab>
+        <Tab className="data-[selected]:border-b-orange-500 data-[selected]:border-b-2 data-[selected]:text-orange-500 text-md font-semibold outline-none mr-5">Activités</Tab>
       </TabList>
       <TabPanels>
 

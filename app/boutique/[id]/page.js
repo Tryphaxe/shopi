@@ -5,7 +5,7 @@ import React from 'react'
 
 function page() {
     return (
-        <div>
+        <div className="w-5/6 mx-auto py-3">
             <section className="relative ">
                 <div className="w-full mx-auto px-4 sm:px-6 lg:px-0 h-1/2">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mx-auto max-md:px-2 ">

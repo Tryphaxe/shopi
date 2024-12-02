@@ -18,13 +18,13 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="bg-white z-50">
+    <header className="bg-white z-50 border-b shadow-sm">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <Link href="/home" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Shopping@babi</span>
             <i className="fa-solid fa-gem fa-2xl" style={{ color: "green" }}></i>
-            <span className="self-center ml-2 text-xl font-semibold whitespace-nowrap text-orange-600">Shopping@babi</span>
+            <span className="self-center ml-2 text-xl font-semibold whitespace-nowrap text-gray-900">Shopping@babi</span>
           </Link>
         </div>
         <div className="flex lg:hidden gap-3">

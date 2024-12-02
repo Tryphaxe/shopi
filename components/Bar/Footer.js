@@ -7,11 +7,11 @@ import Link from 'next/link';
 const Footer = () => {
     const pathname = usePathname();
     return (
-        <footer className={`bg-gray-100 ${["/", "/explorez", "/auth/login", "/auth/signup"].includes(pathname) ? "hidden" : "block"}`}>
+        <footer className={`bg-gray-100 ${["/", "/auth/login", "/auth/signup"].includes(pathname) ? "hidden" : "block"}`}>
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        <a href="/home" className="flex items-center">
+                        <a href="/" className="flex items-center">
                             <i className="fa-solid fa-gem fa-2xl" style={{ color: "green" }}></i>
                             <span className="self-center ml-2 text-2xl font-semibold whitespace-nowrap dark:text-white">Shopping@babi</span>
                         </a>

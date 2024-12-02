@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeroDoneone() {
     return (
-        <section className="py-24">
+        <section className="mt-10">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mb-14 text-center">
                     <span

@@ -20,7 +20,7 @@ const SearchCar = () => {
         </div>
         <input type="text" id="default-search" className="block w-full max-w-xs pr-4 pl-12 py-2 text-sm font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-none leading-relaxed" placeholder="Personne(s)" />
       </div>
-      <a href="#" className="bg-green-900 text-white flex items-center gap-3 px-3 py-2 rounded-lg transition-all hover:bg-green-800 w-min">
+      <a href="#" className="bg-green-900 text-white flex items-center gap-3 px-3 py-2 rounded-lg transition-all hover:bg-green-800">
         <i className="fa-solid fa-search text-orange-400"></i>
         Rechercher
       </a>

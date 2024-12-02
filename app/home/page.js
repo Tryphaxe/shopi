@@ -14,27 +14,18 @@ import SectionStat from "@/components/Stats/SectionStat";
 export default function Home() {
   return (
     <div className="">
-      {/* SECTION BLOCK IMAGE */}
-      <div className="w-full md:h-[87vh] flex items-center justify-center p-10">
-        <div className="h-full rounded-lg overflow-hidden bg-cover bg-center w-full bg-[url('/img/back.jpg')]">
-          <div className="bg-white md:bg-transparent md:bg-gradient-to-r from-[#000000af] to-[#0000000e] md:p-5 h-full w-full flex items-center">
-            <div className="md:pl-5">
-              <Texted />
-              <Research />
-            </div>
-          </div>
-          <Bottom />
-        </div>
+      <div className="w-5/6 mx-auto py-10">
+        <Research />
       </div>
 
       {/* INSCRIPTION */}
-      <div id="hero" className="relative w-5/6 mx-auto lg:py-8 lg:px-20 p-3 rounded-2xl bg-gradient-to-r from-[#1b5c16] to-[#73ad54] flex items-center justify-between flex-col lg:flex-row my-12">
+      <div id="hero" className="relative w-5/6 mx-auto lg:py-4 lg:px-20 p-2 rounded-xl bg-gradient-to-r from-[#1b5c16] to-[#73ad54] flex items-center justify-between flex-col lg:flex-row my-6">
         <div className="block text-center mb-5 lg:text-left lg:mb-0">
-          <h2 className="font-manrope text-2xl sm:text-4xl text-white font-semibold mb-1 sm:mb-5 lg:mb-2">
+          <h2 className="font-manrope text-2xl sm:text-3xl text-white font-semibold mb-1 sm:mb-5 lg:mb-2">
             Inscription
           </h2>
           <p className="text-lg sm:text-xl text-indigo-100">
-          Les membres obtiennent toujours nos meilleurs prix une fois connectés
+            Les membres obtiennent toujours nos meilleurs prix une fois connectés
           </p>
         </div>
         <Link href="/auth/login" className="flex items-center gap-2 bg-white rounded-full shadow-sm text-lg text-[#1b5c16] font-semibold py-1 sm:py-4 px-8 transition-all duration-500">
@@ -46,51 +37,63 @@ export default function Home() {
         </Link>
       </div>
 
-      {/* EVENEMENT CONTAINER */}
-      <div className="my-12 border-b-2 border-orange-300 pb-5 relative">
-        <div className="m-auto flex flex-col items-center my-5">
-          <span className="text-xl sm:text-4xl text-orange-600 sm:mb-3 mb-1 bg-orange-100 py-2 px-5 rounded-full">- Les dernières annonces -</span>
-          <span className="text-lg sm:text-xl text-gray-600">Vibrez sur les évènements du moments</span>
+      {/* SECTION BLOCK IMAGE */}
+      <div className="w-5/6 mx-auto md:h-96 flex items-center justify-center">
+        <div className="h-full rounded-lg overflow-hidden bg-cover bg-center w-full bg-[url('/img/back.jpg')]">
+          <div className="bg-white md:bg-transparent md:bg-gradient-to-r from-[#000000af] to-[#0000000e] md:p-5 h-full w-full flex items-center">
+            <div className="md:pl-5">
+              <Texted />
+            </div>
+          </div>
         </div>
-        <div className="w-5/6 mx-auto mb-4">
+      </div>
+
+      {/* EVENEMENT CONTAINER */}
+      <div className="w-5/6 mx-auto pb-5 relative mt-5">
+        <div className="m-auto flex flex-col my-5">
+          <span className="text-xl sm:text-4xl text-gray-800 sm:mb-3 mb-1 font-medium">Les dernières annonces</span>
+          <span className="text-lg sm:text-xl text-gray-400">Vibrez sur les évènements du moments</span>
+        </div>
+        <div className="mb-4">
           <SlideEven />
         </div>
         {/* BOUTON VOIR PLUS */}
         <div className="flex items-center justify-center">
-          <a href="#" className="bg-green-800 text-white transition-colors cursor-pointer hover:bg-green-700 text-md flex items-center justify-center px-4 py-2 rounded-full mx-auto mt-3">
+          <a href="#" className="border border-green-800 text-green-800 transition-colors cursor-pointer hover:bg-green-700 hover:text-white text-md flex items-center justify-center px-4 py-2 rounded-lg mx-auto mt-3">
             Voir toutes les annonces
           </a>
         </div>
       </div>
 
-      {/* HERO ANOUCEMENT */}
-      <HeroDoneone />
+      <div>
+
+      </div>
 
       {/* SECTION HERO CASE */}
       <Case />
 
       {/* BLOCK VILLE CONTAINER */}
-      <div className="w-5/6 mx-auto my-12 border-b-2 border-green-300 pb-5">
-        <div className="m-auto flex flex-col items-center my-5">
-          <span className="text-xl md:text-4xl text-green-600 mb-3 bg-green-100 py-2 px-5 rounded-full">- Explorez toutes les villes -</span>
+      <div className="w-5/6 mx-auto my-12">
+        <div className="m-auto flex flex-col my-5">
+          <span className="text-xl md:text-4xl font-medium text-gray-900 mb-3">Explorez toutes les villes</span>
           <span className="text-xl text-gray-600">Vibrez sur les évènements du moments</span>
         </div>
-        <div className="px-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <Cardville />
           <Cardville />
           <Cardville />
         </div>
         {/* BOUTON VOIR PLUS */}
-        <div className="flex items-center justify-center">
-          <a href="#" className="bg-orange-800 text-white transition-colors cursor-pointer hover:bg-orange-700 text-md flex items-center justify-center px-4 py-2 rounded-full mx-auto mt-3 gap-2"><i className="fa-solid fa-plus"></i>Voir toutes les villes</a>
+        <div className="flex items-center justify-center mt-3">
+          <a href="#" className="border border-orange-800 bg-white text-orange-700  transition-colors cursor-pointer hover:bg-orange-700 hover:text-white text-md flex items-center justify-center px-4 py-2 rounded-lg mx-auto gap-2">Voir toutes les villes</a>
         </div>
       </div>
 
       {/* SECTION HERO */}
       <HeroSection />
 
-      {/* SECTION CAROUSEL FLOW */}
-      <Carouselflow />
+      {/* HERO ANOUCEMENT */}
+      <HeroDoneone />
 
       {/* SECTION HERO STATS */}
       <SectionStat />
