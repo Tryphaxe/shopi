@@ -1,11 +1,19 @@
-import React from 'react'
+"use client"
+
+import BarChart from "@/components/Charts/Bar";
+import LineChart from "@/components/Charts/Line";
+import PieChart from "@/components/Charts/Pie";
+import TableList from "@/components/Tables/TableList";
+import Link from "next/link";
+import React from "react";
 
 export default function page() {
   return (
     <div className='py-5'>
+      {/* SECTION DECOMPTE */}
       <div className="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
         <div
-          className="flex items-center p-4 bg-gray-50 rounded-lg shadow-xs dark:bg-gray-800"
+          className="flex items-center p-4 bg-white rounded-xl shadow-sm dark:bg-gray-800"
         >
           <div
             className="p-3 mr-4 text-orange-500 bg-orange-100 rounded-full dark:text-orange-100 dark:bg-orange-500"
@@ -30,7 +38,7 @@ export default function page() {
           </div>
         </div>
         <div
-          className="flex items-center p-4 bg-gray-50 rounded-lg shadow-xs dark:bg-gray-800"
+          className="flex items-center p-4 bg-white rounded-xl shadow-sm dark:bg-gray-800"
         >
           <div
             className="p-3 mr-4 text-green-500 bg-green-100 rounded-full dark:text-green-100 dark:bg-green-500"
@@ -57,7 +65,7 @@ export default function page() {
           </div>
         </div>
         <div
-          className="flex items-center p-4 bg-gray-50 rounded-lg shadow-xs dark:bg-gray-800"
+          className="flex items-center p-4 bg-white rounded-xl shadow-sm dark:bg-gray-800"
         >
           <div
             className="p-3 mr-4 text-blue-500 bg-blue-100 rounded-full dark:text-blue-100 dark:bg-blue-500"
@@ -82,7 +90,7 @@ export default function page() {
           </div>
         </div>
         <div
-          className="flex items-center p-4 bg-gray-50 rounded-lg shadow-xs dark:bg-gray-800"
+          className="flex items-center p-4 bg-white rounded-xl shadow-sm dark:bg-gray-800"
         >
           <div
             className="p-3 mr-4 text-teal-500 bg-teal-100 rounded-full dark:text-teal-100 dark:bg-teal-500"
@@ -110,6 +118,95 @@ export default function page() {
           </div>
         </div>
       </div>
+
+      <div className="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-purple-100 bg-orange-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-orange">
+        <div className="flex items-center gap-x-3 text-white">
+          <i className="fa-solid fa-star"></i>
+          <span>Star this project on GitHub</span>
+        </div>
+        <Link href="" className="flex items-center gap-x-3">View more <i className="fa-solid fa-chevron-right"></i></Link>
+      </div>
+
+      {/* SECTION GRAPHIQUE */}
+      <div className="grid gap-6 mb-8 md:grid-cols-3">
+        {/* <!-- Doughnut/Pie chart --> */}
+        <div className="min-w-0  max-h-min p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+          <h4 className="mb-4 font-semibold text-gray-800 dark:text-gray-300">
+            Doughnut/Pie
+          </h4>
+          <div style={{ maxWidth: '165px', margin: '0 auto' }}>
+            <PieChart />
+          </div>
+          <div className="flex justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-400">
+            {/* <!-- Chart legend --> */}
+            <div className="flex items-center">
+              <span className="inline-block w-3 h-3 mr-1 bg-blue-600 rounded-full"></span>
+              <span>Shirts</span>
+            </div>
+            <div className="flex items-center">
+              <span className="inline-block w-3 h-3 mr-1 bg-teal-500 rounded-full"></span>
+              <span>Shoes</span>
+            </div>
+            <div className="flex items-center">
+              <span className="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"></span>
+              <span>Bags</span>
+            </div>
+          </div>
+        </div>
+        {/* <!-- Lines chart --> */}
+        <div className="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+          <h4 className="mb-4 font-semibold text-gray-800 dark:text-gray-300">
+            Lines
+          </h4>
+          <LineChart />
+          <div className="flex justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-400">
+            {/* <!-- Chart legend --> */}
+            <div className="flex items-center">
+              <span className="inline-block w-3 h-3 mr-1 bg-teal-500 rounded-full"></span>
+              <span>Organic</span>
+            </div>
+            <div className="flex items-center">
+              <span className="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"></span>
+              <span>Paid</span>
+            </div>
+          </div>
+        </div>
+        {/* <!-- Bars chart --> */}
+        <div className="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+          <h4 className="mb-4 font-semibold text-gray-800 dark:text-gray-300">
+            Bars
+          </h4>
+          <BarChart />
+          <div className="flex justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-400">
+            {/* <!-- Chart legend --> */}
+            <div className="flex items-center">
+              <span className="inline-block w-3 h-3 mr-1 bg-teal-500 rounded-full"></span>
+              <span>Shoes</span>
+            </div>
+            <div className="flex items-center">
+              <span className="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"></span>
+              <span>Bags</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* SECTION TABLEAU */}
+      <h4
+        className="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300 gap-x-3 flex items-center bg-white px-5 py-2"
+      >
+        <i className="fa-solid fa-thumbtack"></i>
+        Réservation en attente...
+      </h4>
+      <TableList />
+
+      <h4
+        className="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300 gap-x-3 flex items-center bg-white px-5 py-2"
+      >
+        <i className="fa-solid fa-clock-rotate-left"></i>
+        Historique de validation
+      </h4>
+      <TableList />
     </div>
   )
 }

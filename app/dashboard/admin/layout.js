@@ -9,7 +9,7 @@ import TopNav from "./TopNav";
 export default function AdminLayout({ children }) {
 
   return (
-    <div>
+    <div className="bg-gray-50">
         <div>
             <ProfilHeader />
         </div>

@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function ProfilHeader() {
   return (
-    <section className="relative pt-40 border-b mb-3">
+    <section className="relative pt-40 border-b mb-3 bg-white">
       <div className="bg-[url('/img/slide1.jpg')] w-full absolute top-0 left-0 z-0 h-60 bg-cover bg-center"></div>
       <div className="w-full max-w-7xl mx-auto px-6 md:px-8">
         <div className="flex items-center justify-center sm:justify-start relative z-10 mb-5">
-          <img src="/img/pavicon.png" alt="user-avatar-image" className="h-36 w-36 border-4 border-solid border-white rounded-full shadow-md object-cover" />
+          <img src="/img/pavicon.png" alt="user-avatar-image" className="h-36 w-36 border-4 border-solid border-white rounded-full shadow-sm object-cover" />
         </div>
         <div className="flex flex-col sm:flex-row max-sm:gap-5 items-center justify-between mb-5">
           <div className="block">
